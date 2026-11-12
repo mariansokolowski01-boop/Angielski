@@ -1,0 +1,55 @@
+/* src/styles/main.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    background-color: #FAF7F0;
+    color: #292524;
+    font-family:
+      "Quicksand",
+      "Fredoka",
+      system-ui,
+      -apple-system,
+      sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6ED;
+}
+::-webkit-scrollbar-thumb {
+  background: #FDBA74;
+  border-radius: 9999px;
+  border: 2px solid #FAF6ED;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FB923C;
+}
+@keyframes softBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+.animate-soft-bounce {
+  animation: softBounce 2s ease-in-out infinite;
+}
+.shadow-wood {
+  box-shadow: 0 6px 0 #C2410C, 0 10px 16px rgba(194, 65, 12, 0.2);
+}
+.shadow-wood-hover {
+  box-shadow: 0 4px 0 #C2410C, 0 6px 12px rgba(194, 65, 12, 0.2);
+}
+.shadow-wood-active {
+  box-shadow: 0 1px 0 #C2410C, 0 2px 5px rgba(194, 65, 12, 0.2);
+}
+.shadow-leaf {
+  box-shadow: 0 6px 0 #15803D, 0 10px 16px rgba(21, 128, 61, 0.2);
+}

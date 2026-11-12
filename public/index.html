@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lisek wraca do domu – Angielski dla Zuzi 🦊</title>
+    
+    <!-- Przyjazne dzieciom czcionki bajkowe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@500;600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS dla natychmiastowej stylizacji -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: {
+                50: '#FDFCF7',
+                100: '#FAF6ED',
+                200: '#F4ECE0',
+                300: '#E8DCC8',
+              },
+              forest: {
+                50: '#F2F8F4',
+                100: '#E1EFE4',
+                300: '#86BF93',
+                500: '#3A8A53',
+                600: '#2A7240',
+                700: '#1F5730',
+                800: '#184325',
+              },
+              fox: {
+                50: '#FFF7ED',
+                100: '#FFEDD5',
+                300: '#FDBA74',
+                500: '#F97316',
+                600: '#EA580C',
+                700: '#C2410C',
+              }
+            },
+            fontFamily: {
+              story: ['"Quicksand"', '"Fredoka"', 'system-ui', 'sans-serif'],
+              hand: ['"Patrick Hand"', 'cursive']
+            }
+          }
+        }
+      }
+    </script>
+    
+    <link rel="stylesheet" href="./bundle.css">
+    
+    <!-- Canvas confetti dla efektów nagrody -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+
+    <style>
+      body {
+        background-color: #FAF7F0;
+        font-family: 'Quicksand', 'Fredoka', system-ui, sans-serif;
+        user-select: none;
+      }
+      .shadow-wood {
+        box-shadow: 0 6px 0 #C2410C, 0 10px 16px rgba(194, 65, 12, 0.2);
+      }
+      .shadow-wood-hover:hover {
+        box-shadow: 0 4px 0 #C2410C, 0 6px 12px rgba(194, 65, 12, 0.2);
+      }
+      .shadow-wood-active:active {
+        box-shadow: 0 1px 0 #C2410C, 0 2px 5px rgba(194, 65, 12, 0.2);
+        transform: translateY(2px);
+      }
+      .shadow-leaf {
+        box-shadow: 0 6px 0 #15803D, 0 10px 16px rgba(21, 128, 61, 0.2);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-[#FAF7F0] text-stone-800 antialiased">
+    <div id="root"></div>
+    <script type="module" src="./bundle.js"></script>
+  </body>
+</html>
